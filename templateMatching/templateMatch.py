@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[42]:
-
-
 import cv2
 import numpy as np
-
-
-# In[75]:
-
 
 threshold =0.8
 
@@ -30,10 +20,3 @@ for mode in matchModes:
         cv2.rectangle(fullImage, match, (int(match[0] + width), int(match[1] + height)), (0,255,0), 2)
     #Write resulting image to a new file
     cv2.imwrite('.\\template_match_results\\'+mode+'.png',fullImage)
-
-
-# In[ ]:
-
-
-
-
